@@ -11,10 +11,10 @@
 ## 📸 Paparan (Screenshots)
 
 ### Halaman Utama
-![Halaman Utama]<img src="screenshots/Halaman Utama.png">
+[Halaman Utama]<img src="screenshots/Halaman Utama.png">
 
 ### Simulasi Virus
-![Simulasi](screenshots/preview-simulasi.png)
+[Simulasi]<img src="screenshots/Simulasi.png">
 
 ---
 
