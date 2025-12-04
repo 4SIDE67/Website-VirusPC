@@ -11,7 +11,7 @@
 ## 📸 Paparan (Screenshots)
 
 ### Halaman Utama
-![Halaman Utama](screenshots/preview-laman-utama.png)
+![Halaman Utama](screenshots/Halaman Utama.png)
 
 ### Simulasi Virus
 ![Simulasi](screenshots/preview-simulasi.png)
