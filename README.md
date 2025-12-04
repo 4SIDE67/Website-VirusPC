@@ -9,7 +9,12 @@
 ---
 
 ## 📸 Paparan (Screenshots)
-(https://github.com/4SIDE67/Website-VirusPC/blob/main/Website%20VirusPC.png)
+
+### Halaman Utama
+![Halaman Utama](screenshots/preview-laman-utama.png)
+
+### Simulasi Virus
+![Simulasi](screenshots/preview-simulasi.png)
 
 ---
 
