@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulasi Virus dalam Persekitaran Terkawal</title>
+  <link rel="icon" type="image/png" href="Assets/keyboard.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"> <img src="Logo/virus (2).svg" alt="Logo" class="header-logo-img"> 
+        Virus<span>PC</span></h1>
+      <nav class="main-nav">
+        <a href="index.html">Utama</a>
+        <a href="jenis-virus.html">Jenis Virus</a>
+        <a href="tanda-jangkitan.html">Tanda Jangkitan</a>
+        <a href="pencegahan.html">Pencegahan</a>
+        <a href="tindakan.html">Tindakan</a>
+        <a href="simulasi.html" class="active">Simulasi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <h2>Simulasi Virus dalam Persekitaran Terkawal</h2>
+      <p class="page-intro">
+        Ini ialah simulasi <strong>selamat</strong> yang hanya menggambarkan bagaimana
+        pelbagai jenis virus komputer boleh memberi kesan kepada sistem. Tiada kod
+        berbahaya sebenar dijalankan di sini. Semua interaksi adalah <em>contoh visual</em>
+        untuk tujuan pembelajaran.
+      </p>
+
+      <div class="sim-layout">
+        <section class="sim-controls">
+          <h3>Pilih Jenis "Virus" untuk Disimulasikan</h3>
+          <div class="sim-buttons">
+            <button class="btn-primary sim-btn" data-sim="file">Virus Fail</button>
+            <button class="btn-primary sim-btn" data-sim="worm">Worm</button>
+            <button class="btn-primary sim-btn" data-sim="trojan">Trojan</button>
+            <button class="btn-primary sim-btn" data-sim="ransom">Ransomware</button>
+            <button class="btn-primary sim-btn" data-sim="spyware">Spyware / Keylogger</button>
+            <button class="btn-primary sim-btn" data-sim="adware">Adware</button>
+          </div>
+          <button class="sim-reset" id="simReset">Reset Persekitaran</button>
+
+          <div class="note-box sim-note">
+            <h3>Cara Guna</h3>
+            <p>
+              Pilih satu jenis virus untuk lihat <em>simulasi</em> bagaimana ia
+              berkelakuan. Kawasan di sebelah kanan bertindak sebagai "komputer maya".
+            </p>
+          </div>
+
+          <div class="note-box sim-note">
+            <h3>Mode Panduan</h3>
+            <p>
+              Tekan butang di bawah untuk lihat langkah demi langkah bagaimana serangan
+              biasanya bermula sehingga kesannya kepada pengguna.
+            </p>
+            <button class="btn-primary sim-guide-btn" id="guideBtn">Mula Panduan Langkah Demi Langkah</button>
+          </div>
+        </section>
+
+        <section class="sim-screen" id="simScreen">
+          <div class="sim-status" id="simStatus">
+            Status: <span class="status-safe">SELAMAT</span>
+          </div>
+          <div class="sim-describe" id="simDescribe">
+            Pilih mana-mana jenis virus di sebelah kiri untuk memulakan simulasi, atau
+            gunakan Mode Panduan untuk lihat aliran serangan yang biasa.
+          </div>
+
+          <div class="sim-upper">
+            <div class="sim-desktop" id="simDesktop">
+              <div class="sim-file" data-name="dokumen_penting.docx">dokumen_penting.docx</div>
+              <div class="sim-file" data-name="gambar_percutian.jpg">gambar_percutian.jpg</div>
+              <div class="sim-file" data-name="akaun_belanjawan.xlsx">akaun_belanjawan.xlsx</div>
+              <div class="sim-file" data-name="nota_sekolah.pdf">nota_sekolah.pdf</div>
+            </div>
+
+            <div class="sim-side">
+              <div class="sim-email" id="simEmail">
+                <h4>Emel Phishing (Contoh)</h4>
+                <p class="sim-email-from"><strong>Dari:</strong> "Bank Malaysia" &lt;support@bank-malaysia-secure.com&gt;</p>
+                <p class="sim-email-subject"><strong>Subjek:</strong> AKAUN ANDA AKAN DITUTUP SEGERA!</p>
+                <p class="sim-email-body">
+                  Akaun anda akan digantung dalam masa 24 jam. Sila klik pautan di bawah dan log masuk
+                  untuk mengesahkan maklumat anda.
+                </p>
+                <div class="sim-email-actions">
+                  <button class="sim-email-btn" data-email-action="click-link">Klik Pautan Dalam Emel</button>
+                  <button class="sim-email-btn" data-email-action="check-safely">Semak Emel Secara Selamat</button>
+                </div>
+              </div>
+
+              <div class="sim-login" id="simLogin">
+                <h4>Borang Login (Contoh)</h4>
+                <label>
+                  Emel / Username
+                  <input type="text" id="loginUser" placeholder="user@example.com" autocomplete="off" />
+                </label>
+                <label>
+                  Kata Laluan
+                  <input type="password" id="loginPass" placeholder="********" autocomplete="off" />
+                </label>
+                <button id="loginBtn">Login</button>
+                <p class="sim-login-note">
+                  Jika spyware/keylogger aktif, setiap kekunci yang anda taip boleh direkod.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-browser" id="simBrowser">
+            <div class="sim-browser-bar">
+              <span class="sim-dot red"></span>
+              <span class="sim-dot yellow"></span>
+              <span class="sim-dot green"></span>
+              <input type="text" id="browserAddress" value="https://google.com" />
+              <button id="browserGo">Pergi</button>
+            </div>
+            <div class="sim-browser-view" id="browserView">
+              <p><strong>google.com</strong> sepatutnya dipaparkan di sini. Taip alamat lain di bar alamat.</p>
+            </div>
+          </div>
+
+          <div class="sim-log" id="simLog"></div>
+        </section>
+      </div><div class="page-navigation">
+        <a href="tindakan.html" class="btn-secondary">← Kembali ke Tindakan</a>
+        <a href="index.html" class="btn-primary">Tamat: Balik Utama →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+    
+    <div class="footer-branding">
+      <h2 class="footer-logo">
+        <img src="Logo/virus (2).svg" alt="Logo" class="footer-logo-img">
+        Virus<span>PC</span>
+      </h2>
+      <p>Panduan keselamatan siber dan simulasi virus untuk pembelajaran.</p>
+    </div>
+
+    <div class="footer-info">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/ahmdmxz._/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/4SIDE67" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Utama</a>
+        <a href="pencegahan.html">Tips Keselamatan</a>
+        <a href="#">Privasi</a>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Info Virus PC. Dibina oleh Open Source.</p>
+    </div>
+    
+  </div>
+  </footer>
+  <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
