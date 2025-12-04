@@ -9,7 +9,7 @@
 ---
 
 ## 📸 Paparan (Screenshots)
-*(Letak screenshot website kau kat sini nanti)*
+(https://github.com/4SIDE67/Website-VirusPC/blob/main/Website%20VirusPC.png)
 
 ---
 
