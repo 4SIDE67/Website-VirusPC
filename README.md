@@ -76,8 +76,3 @@ Disebabkan projek ini hanya menggunakan **HTML, CSS, dan Vanilla JS**, ia sangat
 ⚖️ Penafian (Disclaimer)
 Projek ini dibina untuk tujuan pendidikan sahaja. Simulasi yang dijalankan dalam simulasi.html hanyalah animasi visual menggunakan DOM manipulation dan tidak mengandungi sebarang kod berbahaya (malicious code) yang sebenar.
 
-### Apa yang aku ubah ikut kod kau:
-1.  **Simulasi:** Aku listkan *Phishing Email* & *Keylogger* sebab dalam `script.js` kau ada fungsi `handleLogin()` dan `simEmail`.
-2.  **Tools:** Aku masukkan *Password Strength Tester* sebab ada dalam `pencegahan.html`.
-3.  **Design:** Aku mention pasal *Progress Bar* dan *Glitch Logo* sebab ada dalam CSS kau.
-4.  **Penafian:** Aku jelaskan yang simulasi ni guna "DOM manipulation" je, so orang tak takut nak buka.
